@@ -1,0 +1,42 @@
+.footer {
+  text-align: center;
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include addMediaQuery(phone-l) {
+      flex-flow: column;
+    }
+  }
+
+  &__logo {
+    height: 8rem;
+    margin-right: 1rem;
+  }
+
+  &__logo-link {
+    text-decoration: none;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-top: 1rem;
+
+    @include addMediaQuery(phone-l) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-link {
+    margin: 0 0.8rem;
+    text-decoration: none;
+  }
+}

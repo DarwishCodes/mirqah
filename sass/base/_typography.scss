@@ -1,0 +1,64 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-1;
+}
+
+.heading-primary {
+  font-size: 6.4rem;
+  line-height: 8rem;
+  color: $color-white;
+
+  @include addMediaQuery(laptop) {
+    font-size: 5rem;
+  }
+
+  @include addMediaQuery(tablet) {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  @include addMediaQuery(phone-l) {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  &--animated {
+    animation: fadeToTop 2s ease-out 0.1s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.heading-secondary {
+  line-height: 8rem;
+  font-weight: 600;
+  font-size: 3.7rem;
+  color: $color-white;
+
+  @include addMediaQuery(laptop) {
+    font-size: 3rem;
+  }
+
+  @include addMediaQuery(tablet) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+
+  @include addMediaQuery(phone-l) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  &--animated {
+    animation: fadeToTop 2s ease-out 0.7s;
+    animation-fill-mode: backwards;
+  }
+}

@@ -1,0 +1,49 @@
+.shape {
+  position: absolute;
+  &--1 {
+    right: 11%;
+    top: 28%;
+    z-index: -1;
+    animation: shake 30s ease 2s infinite;
+    animation-fill-mode: backwards;
+  }
+
+  &--2 {
+    left: 45%;
+    top: -30%;
+    z-index: -1;
+    animation: shake2 30s ease 2.3s infinite;
+    animation-fill-mode: backwards;
+  }
+  &--3 {
+    left: 10%;
+    top: 45%;
+    z-index: -1;
+    animation: shake 30s ease 2.5s infinite;
+    animation-fill-mode: backwards;
+  }
+
+  &--4 {
+    right: 11%;
+    bottom: 0;
+    z-index: -1;
+    animation: shake 30s ease 2.5s infinite;
+    animation-fill-mode: backwards;
+
+    @include addMediaQuery(tablet) {
+      display: none;
+    }
+  }
+
+  &--5 {
+    left: 0rem;
+    top: 0;
+    z-index: -1;
+    animation: shake2 30s ease 2.3s infinite;
+    animation-fill-mode: backwards;
+
+    @include addMediaQuery(tablet) {
+      display: none;
+    }
+  }
+}

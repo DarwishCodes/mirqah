@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  &__logo-link {
+    text-decoration: none;
+  }
+
+  &__logo-img {
+    @include addMediaQuery(phone-l) {
+      height: 10rem;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.section-mockup {
+  padding: 0rem 0 0rem 0;
+}
+
+.mockup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  &__device {
+    width: 40%;
+
+    @include addMediaQuery(tablet) {
+      width: 80%;
+    }
+  }
+}
+
+.section-contact {
+  padding: 5rem 0 5rem 0;
+}
+
+.contact {
+  position: relative;
+
+  &__img {
+    width: 78%;
+
+    @include addMediaQuery(laptop) {
+      width: 100%;
+    }
+
+    @include addMediaQuery(tablet) {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include addMediaQuery(tablet) {
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  padding: 0 0 2rem 0;
+}
